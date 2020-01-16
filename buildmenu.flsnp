@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <script type="text/javascript" src="buildMenu.js">
+        </script>
+		<script type="text/javascript"> 
+			function buildmenu_init() { buildMenu('submenu', 'h3'); }
+			var oldonload = window.onload;
+			if(typeof window.onload != 'function') {
+			window.onload = buildmenu_init;
+			} else {
+			window.onload = function() {
+			oldonload(); buildmenu_init();
+			}
+			}
+		</script>
+        <table class="inThisTopic">
+            <tbody>
+                <tr>
+                    <td>
+                        <p>In this article...</p>
+                        <div id="submenu">building menu...</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
